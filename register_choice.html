@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Choice</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <style>
+        .ab {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row col-md-6 col-md-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading text-center">
+                    <h1>Registration Choice</h1>
+                </div>
+                <div class="panel-body">
+                    <div class="text-center">
+                        <h3>Choose Registration Type</h3>
+                        <form action="connect.php" method="post">
+                            <input type="hidden" name="register_type" value="admin">
+                            <button type="submit" class="btn btn-primary"> Admin</button>
+                        </form>
+                        <form action="connect.php" method="post" class="ab">
+                            <input type="hidden" name="register_type" value="user">
+                            <button type="submit" class="btn btn-primary"> User</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

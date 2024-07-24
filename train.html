@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Train Booking</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Enter the New Train Details</Details>
+            </h1>
+            <div class="col-md-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Add New Train</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form action="train.php" method="POST">
+                            <div class="form-group">
+                                <label for="TrainNo">Train No</label>
+                                <input type="text" class="form-control" id="TrainNo" name="TrainNo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="TrainName">Train Name</label>
+                                <input type="text" class="form-control" id="TrainName" name="TrainName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Capacity">Capacity</label>
+                                <input type="number" class="form-control" id="Capacity" name="Capacity" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="ArrivalTime">Arrival Time</label>
+                                <input type="text" class="form-control" id="ArrivalTime" name="ArrivalTime"
+                                    placeholder="HH:MM AM/PM" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="DepartureTime">Departure Time</label>
+                                <input type="text" class="form-control" id="DepartureTime" name="DepartureTime"
+                                    placeholder="HH:MM AM/PM" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Destination">Destination</label>
+                                <input type="text" class="form-control" id="Destination" name="Destination" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Destination">Start Station </label>
+                                <input type="text" class="form-control" id="Station" name="Start" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="TicketPrice">Ticket Price</label>
+                                <input type="number" class="form-control" id="TicketPrice" name="TicketPrice" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
